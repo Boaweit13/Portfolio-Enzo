@@ -1,6 +1,7 @@
 import React from 'react'
 import ComponentScrambleText from './ComponentScrambleText'
 
+
 function ComponentHeroText() {
 
   return (
@@ -15,7 +16,7 @@ function ComponentHeroText() {
                     a
                 </p>
                 <div className="text-4xl font-medium text-neutral-300">
-                    <ComponentScrambleText text="Software Engineer" />
+                    <ComponentScrambleText list={["Developer", "Diver", "Fucking GOD"]}/>
                 </div>
 
             </div>
