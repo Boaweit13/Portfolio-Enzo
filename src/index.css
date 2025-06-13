@@ -1,8 +1,8 @@
+@import "tailwindcss";
 
 /* Imported from https://github.com/Ali-Sanati/Portfolio/blob/main/src/index.css (Subject to change) */
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
-:root {
+@theme {
   --color-primary: #030412;
   --color-midnight: #06091f;
   --color-navy: #161a31;
@@ -17,11 +17,8 @@
   --color-sand: #d6995c;
   --color-coral: #ea4884;
   --animate-orbit: orbit 50s linear infinite;
-  --animate-marquee: marquee 50s linear infinite;
-  --animate-marquee-vertical: marquee-vertical 50s linear infinite;
-}
-
-@keyframes orbit {
+  
+  @keyframes orbit {
     0% {
       transform: rotate(calc(var(--angle) * 1deg))
         translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
@@ -32,7 +29,8 @@
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
-  
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee-vertical: marquee-vertical 50s linear infinite;
 
   @keyframes marquee {
     from {
@@ -51,7 +49,7 @@
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
-
+}
 body {
   background: #030412;
   font-family: "Funnel Display", sans-serif;
