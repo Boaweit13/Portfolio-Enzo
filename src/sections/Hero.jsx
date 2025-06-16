@@ -4,7 +4,7 @@ import ComponentBackground from '../components/ComponentBackground'
 
 function Hero() {
   return (
-    <section className="flex items-start md:justify-start min-h-screen c-space">
+    <section id='home' className="flex items-start md:justify-start min-h-screen c-space">
         <ComponentHeroText/>
         <ComponentBackground/>
     </section>

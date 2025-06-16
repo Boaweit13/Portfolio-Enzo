@@ -15,19 +15,19 @@ function GuidedProjects() {
   }
 
   return (
-    <section className="c-space section-spacing">
+    <section id='projects' className="c-space section-spacing">
         <h2 className="text-heading">Guided Projects</h2>
         <div className="flex grid-default-color grid-projects mt-12">
-            <div className='flex items-start p-4'>
-                <div>
-                  <ol>
-                    <li><button className='c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(0)}>Project 1</button></li>
-                    <li><button className='c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(1)}>Project 2</button></li>
-                    <li><button className='c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(2)}>Project 3</button></li>
-                    <li><button className='c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(3)}>Project 4</button></li>
+            <div className='flex items-center p-4 flex-col md:flex-row max-w-full' >
+                <div className='mb-10 md:w-1/3 flex justify-center'>
+                  <ol className='flex flex-row md:flex-col '>
+                    <li><button className='md:c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(0)}>Project 1</button></li>
+                    <li><button className='md:c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(1)}>Project 2</button></li>
+                    <li><button className='md:c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(2)}>Project 3</button></li>
+                    <li><button className='md:c-space m-2 flex cursor-pointer text-neutral-400 hover:text-white foucus:outline-none' onClick={() => projectsHandler(3)}>Project 4</button></li>
                   </ol>
                 </div>
-                <div className='w-1/2 h-auto ml-11'>
+                <div className='justify-center max-w-full md:w-3/4 flex justify-center'>
                     <img src={project} className='w-full h-full'/>
                 </div>
             </div>

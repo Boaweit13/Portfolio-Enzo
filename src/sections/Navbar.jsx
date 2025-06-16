@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 // Importing motion library for animations (https://motion.dev/docs/react-quick-start)
 import {motion} from "motion/react"
+import {Link} from 'react-scroll';
+
 function Navigation(){
     return <ul className="nav-ul">
         <li className="nav-li">
-            <a className="nav-link" href='#home'>Home</a>
+            <Link className="nav-link" to='home' smooth={true} duration={300}>Home</Link>
         </li>
         <li className="nav-li">
-            <a className="nav-link" href='#about'>About</a>
+            <Link className="nav-link" to='about' smooth={true} duration={300}>About</Link>
         </li>
         <li className="nav-li">
-            <a className="nav-link" href='#projects'>Projects</a>
+            <Link className="nav-link" to='projects' smooth={true} duration={300}>Projects</Link>
         </li>
     </ul>
 }

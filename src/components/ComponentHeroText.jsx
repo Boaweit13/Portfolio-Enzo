@@ -4,7 +4,7 @@ import {motion} from "motion/react";
 
 function ComponentHeroText() {
     
-    const sWords = ["Developer", "Helldiver", "GOD"];
+    const sWords = ["Developer", "Helldiver", "Student"];
     const variants = {
         hidden:{opacity: 0, x:-50},
         visible:{opacity: 1, x:0},
@@ -29,7 +29,7 @@ function ComponentHeroText() {
             </div>
         </div>
         {/* Mobile View */}
-        <div className="container relative left-1/4 flex-col c-space md:hidden">
+        <div className="container relative left-1/6 flex-col c-space md:hidden">
             <motion.p className="text-4xl font-medium text-left" variants={variants} initial="hidden" animate="visible" transition={{delay: 1}}>
                 Hello!  here's <br/><span className="font-bold text-white">Enzo Boadas</span>
             </motion.p>
