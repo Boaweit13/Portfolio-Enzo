@@ -29,7 +29,7 @@ function ComponentHeroText() {
             </div>
         </div>
         {/* Mobile View */}
-        <div className="container absolute left-1/4 flex-col c-space md:hidden">
+        <div className="container relative left-1/4 flex-col c-space md:hidden">
             <motion.p className="text-4xl font-medium text-left" variants={variants} initial="hidden" animate="visible" transition={{delay: 1}}>
                 Hello!  here's <br/><span className="font-bold text-white">Enzo Boadas</span>
             </motion.p>
